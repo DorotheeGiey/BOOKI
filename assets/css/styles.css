@@ -22,14 +22,14 @@
     font-weight: 700;
     padding: 0px;
     margin: 0px;
-    margin-bottom: ;
    }
 
     p{
     font-size: 16px;
     font-weight: 400;
-        padding: 0;
+    padding: 0;
     margin: 5px;
+
    }
 
    li{
@@ -165,17 +165,24 @@
 
 #hebergements{
   display: flex;
-  gap:20px;
+  justify-content: space-between;
   margin-top: 50px;
   margin-bottom: 50px;
 }
 
 .selection_hebergement{
-  width: 60%;
+  width: 62%;
   background-color: #F2F2F2;
   padding-left: 40px;
   padding-right: 40px;
   border-radius: 20px;
+}
+
+h3{
+  font-size: 16px;
+  font-weight: 700;
+  padding: 0;
+  margin: 5px;
 }
 
 .herbergement_cards{
@@ -191,7 +198,7 @@
  background-color: white;
  border-radius: 20px;
  border: solid 3px white;
- box-shadow: 2px 4px 4px 2px rgba(0,0,0,0.1);
+ box-shadow: 2px 4px 4px 2px rgba(160, 160, 160, 0.1);
  padding-bottom: 5px;
 }
 
@@ -211,12 +218,7 @@
   padding-top: 7px;
 }
 
-h3{
-  font-size: 16px;
-  font-weight: 700;
-  padding: 0;
-  margin: 5px;
-}
+
 .card p{
   font-size: 14px;
   font-weight: 400;
@@ -230,7 +232,7 @@ h3{
 }
 
 .selection_hebergement p{
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 
 /*populaire*/
@@ -258,7 +260,7 @@ h3{
   background-color: white;
   border-radius: 20px;
   border: solid 3px white;
-  box-shadow: 2px 4px 4px 2px rgba(0,0,0,0.1);
+  box-shadow: 2px 4px 4px 2px rgba(160, 160, 160, 0.1);
   display: flex;
   position: relative;
   margin-bottom: 20px;
@@ -283,24 +285,54 @@ h3{
 
 /*activités*/
 
+#activites{
+  max-width: 1400px;
+}
 
+.selection_activites{
+  display: flex;
+  flex: row;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
 
+.activite_card{
+  width: 23%;
+  height: 440px;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 2px 4px 4px 2px rgba(160, 160, 160, 0.1);
+}
 
+.activite_card img{
+  width: 100%;
+  height: 390px;
+  border-radius: 20px 20px 0 0;
+  object-fit: cover;
+}
 
+.activite_card h3{
+  margin: 15px;
+}
 
 /*footer*/
 
 footer{
   max-width: 1400px;
   display: flex;
+  flex-direction: row;
+  gap: 250px;
   flex-wrap: wrap;
-  justify-content: space-around;
   background-color:#F2F2F2 ;
-  padding: 45px;
+  padding: 50px;
  }
 
  .footer_ul{
   padding: 0;
+ }
+
+ .footer_ul li{
+  padding: 3px; 
  }
 
 
