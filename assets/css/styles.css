@@ -2,9 +2,8 @@
     body {
     background-color: white; 
     font-family: 'Raleway', sans-serif;
-    margin-left: 60px;
-    margin-right: 60px;
-    margin-top: 19px;
+    max-width: 1400px;
+    margin: auto;
     }
 
     header {
@@ -14,6 +13,8 @@
       height: 20px;
       margin-bottom: 40px;
       margin-top: 40px;
+      margin-right: 40px;
+
     }
 
     h1 h2{
@@ -21,13 +22,14 @@
     font-weight: 700;
     padding: 0px;
     margin: 0px;
+    margin-bottom: ;
    }
 
     p{
     font-size: 16px;
     font-weight: 400;
-    padding: 0px;
-    margin: 0px;
+        padding: 0;
+    margin: 5px;
    }
 
    li{
@@ -74,21 +76,20 @@
 }
 
 .icone_location{
-  font-size: 20px;
   background-color: #F2F2F2;
   border: solid 1px #F2F2F2;
   border-radius: 15px 0 0 15px;
   text-align: center;
   height: 50px;
   width: 50px;
-  position: relative;
 }
 
-.icone_location .fa-location-dot{
+.fa-black{
+  font-size: 22px;
   color: black;
-  position: relative;
-  top : 30%;
+  line-height: 50px;
 }
+
 
 .zone_recherche{
   height: 50px;
@@ -133,6 +134,7 @@
   .liste_filtres{
     display: flex;
     gap: 40px;
+    flex-wrap: wrap;
     align-items: center;
    }
    
@@ -149,72 +151,59 @@
 
    .bouton_filtres:hover{
     background-color:#DEEBFF;
-
    }
 
-   .informations_filtres{
-    display: flex;
-    gap: 5px;
-   }
-
-
-   .fa-solid{
-    width: 20px;
-    height: 20px;
+   .fa-blue{
     color: #0065FC;
    }
 
-/*
-   .cercle_info {
-    margin: 0;
-    padding: 0;
-    position: relative;
-   }
-   */
-
-  .fa-info{
-    border : solid 1px #D9D9D9;
-    text-align: center;
-    border-radius: 10px;
-    font-size: 80%;
-   }
-  
+   .fa-grey{
+    color: #F2F2F2;
+  }
 
 /* hébergements */
 
-.hebergement{
+#hebergements{
   display: flex;
   gap:20px;
   margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .selection_hebergement{
-  width: 880px;
-  height: 626px;
+  width: 60%;
   background-color: #F2F2F2;
   padding-left: 40px;
   padding-right: 40px;
-  padding-bottom: 40px;
   border-radius: 20px;
 }
 
-.selection_hebergement_cards{
+.herbergement_cards{
   display: flex;
-  gap:20px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 40px;
 }
 
-.selection_hebergement_card{
- width: 246px;
- height: 199px;
+.hebergement_card{
+ width: 30%;
  background-color: white;
  border-radius: 20px;
  border: solid 3px white;
+ box-shadow: 2px 4px 4px 2px rgba(0,0,0,0.1);
+ padding-bottom: 5px;
+}
+
+.margin_card{
+  margin-bottom: 20px;
 }
 
 .card img{
-  width: 246px;
+  width: 100%;
   height: 124px;
   border-radius: 20px 20px 0 0;
+  object-fit: cover;
 }
 
 .text_card{
@@ -226,43 +215,86 @@ h3{
   font-size: 16px;
   font-weight: 700;
   padding: 0;
-  margin: 0;
-  padding-bottom: 4px;
+  margin: 5px;
 }
-
 .card p{
   font-size: 14px;
-  padding-bottom: 4px;
+  font-weight: 400;
+  padding: 5px;
 }
 
 .text_card i{
-  font-size: 80%;
+  font-size: 70%;
   padding: 0;
   margin: 0;
 }
 
+.selection_hebergement p{
+  margin-bottom: 20px;
+}
+
+/*populaire*/
+
 .selection_populaire{
-  width: 420px;
+  width: 30%;
   background-color: #F2F2F2;
   border-radius: 20px;
-  padding-left: 37px;
+  padding : auto;
 }
 
 .selection_populaire_entete{
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  width: 80%;
+  margin: auto;
 }
 
-.trans-star{
-  opacity: 20%;
+.populaire_card{
+  margin : auto;
+  width: 80%;
+  height:144px;
+  background-color: white;
+  border-radius: 20px;
+  border: solid 3px white;
+  box-shadow: 2px 4px 4px 2px rgba(0,0,0,0.1);
+  display: flex;
+  position: relative;
+  margin-bottom: 20px;
+
 }
+
+.populaire_card img{
+  height: 100%;
+  width: 137px;
+  border-radius: 20px 0 0 20px ;
+  object-fit: cover;
+}
+.populaire_card .text_card{
+  margin-top: 5px;
+}
+
+.populaire_card .note{
+  position: absolute;
+  bottom: 10px;
+
+}
+
+/*activités*/
+
+
+
+
+
 
 /*footer*/
 
 footer{
+  max-width: 1400px;
   display: flex;
-  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: space-around;
   background-color:#F2F2F2 ;
   padding: 45px;
  }
@@ -270,6 +302,10 @@ footer{
  .footer_ul{
   padding: 0;
  }
+
+
+
+ 
 
 /* .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
