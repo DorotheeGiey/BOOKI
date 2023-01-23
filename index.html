@@ -15,16 +15,14 @@
 </head>
 <body>
 <header>
-  <div id="logo_accueil">
-  <img src="assets/images/logo/Booki@3x.png" alt="Logo Booki">
-  </div>
+  <img id="logo_accueil" src="assets/images/logo/Booki@3x.png" alt="Logo Booki">
   <nav>
     <ul id="nav_header">
-        <li>
-            <a href="#hebergements" class="lien_nav">Hébergements</a>
+        <li class="lien_nav">
+            <a href="#hebergements">Hébergements</a>
         </li>
-        <li>
-            <a href="#activites" class="lien_nav">Activités</a>
+        <li class="lien_nav">
+            <a href="#activites">Activités</a>
         </li>
     </ul>
   </nav>
@@ -108,7 +106,7 @@
           <div class="card">
             <img src="assets/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="photo chambre la Canebiere">
           </div>
-          <div class="text_card">
+          <div class="text_card_heb">
               <h3>Auberge La Canebière</h3>
               <p>Nuit à partir de 25<strong>€</strong></p>
               <div class="note">
@@ -128,7 +126,7 @@
          <div class="card">
            <img src="assets/Images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"  alt="photo hotel du port">
          </div>
-          <div class="text_card">
+          <div class="text_card_heb">
              <h3>Hôtel du Port</h3>
              <p>Nuit à partir de 25<strong>€</strong></p>
              <div class="note">
@@ -149,7 +147,7 @@
           <div class="card">
             <img src="assets/Images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"  alt="photo hotel les mouettes">
           </div>
-            <div class="text_card">
+            <div class="text_card_heb">
                 <h3>Hôtel Les Mouettes</h3>
                 <p>Nuit à partir de 76<strong>€</strong></p>
                 <div class="note">
@@ -169,7 +167,7 @@
          <div class="card">
            <img src="assets/Images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"  alt="photo hotel de la mer">
          </div>
-           <div class="text_card">
+           <div class="text_card_heb">
              <h3>Hôtel de la Mer</h3>
              <p>Nuit à partir de 46<strong>€</strong></p>
              <div class="note">
@@ -189,7 +187,7 @@
          <div class="card">
            <img src="assets/Images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"  alt="photo Auberge le Panier">
          </div>
-           <div class="text_card">
+           <div class="text_card_heb">
               <h3>Auberge Le Panier</h3>
               <p>Nuit à partir de 23<strong>€</strong></p>
               <div class="note">
@@ -208,7 +206,7 @@
          <div class="card">
            <img src="assets/Images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"  alt="photo Auberge le Panier">
          </div>
-           <div class="text_card">
+           <div class="text_card_heb">
              <h3>Hôtel Chez Amina</h3>
              <p>Nuit à partir de 96<strong>€</strong></p>
              <div class="note">
@@ -239,12 +237,9 @@
 
         <div class="populaire_cards">
 
-            <a href="">
-            <div class="populaire_card">
-              <div class="img_pop_card">
-                <img src="assets/Images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"  alt="photo Hotel Soleil du Matin">
-              </div>
-              <div class="text_card">
+            <a href="" class="populaire_card">
+              <img class="img_pop_card" src="assets/Images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"  alt="photo Hotel Soleil du Matin">
+              <div class="text_card_pop">
                 <h3>Hôtel Le Soleil du Matin</h3>
                 <p>Nuit à partir de 126<strong>€</strong></p>
                   <div class="note">
@@ -255,15 +250,11 @@
                       <i class="fa-solid fa-star fa-grey"></i>
                   </div>
               </div>
-            </div>
             </a>
 
-            <a href="">
-              <div class="populaire_card">
-                <div class="img_pop_card">
-                    <img src="assets/Images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"  alt="photo Chambres d'hôtes au cœur de l'eau ">
-                </div>
-                    <div class="text_card">
+            <a href="" class="populaire_card">
+                  <img class="img_pop_card" src="assets/Images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"  alt="photo Chambres d'hôtes au cœur de l'eau ">
+                  <div class="text_card_pop">
                       <h3>Chambres d'hôtes Au cœur de l'eau </h3>
                       <p>Nuit à partir de 71<strong>€</strong></p>
                       <div class="note">
@@ -274,15 +265,11 @@
                           <i class="fa-solid fa-star fa-grey"></i>
                       </div>
                   </div>
-                </div>
               </a>  
 
-            <a href="">
-                <div class="populaire_card">
-                    <div class="img_pop_card">
-                      <img src="assets/Images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"  alt="photo Hôtel Bleu et Blanc">
-                    </div>
-                      <div class="text_card">
+            <a href="" class="populaire_card">
+                  <img class="img_pop_card" src="assets/Images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"  alt="photo Hôtel Bleu et Blanc">
+                    <div class="text_card_pop">
                         <h3>Hôtel Bleu et Blanc </h3>
                         <p>Nuit à partir de 68<strong>€</strong></p>
                         <div class="note">
@@ -293,12 +280,9 @@
                             <i class="fa-solid fa-star fa-grey"></i>
                         </div>
                     </div>
-              </div>
               </a>
       
         </div>
-
-    </div>
 
 </section>
 
