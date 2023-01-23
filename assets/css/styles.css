@@ -278,12 +278,12 @@ h3{
 .populaire_card img{
   height: 100%;
   width: auto;
-  aspect-ratio:1;
+  aspect-ratio: 1;
   border-radius: 20px 0 0 20px ;
   object-fit: cover;
 }
 
-.populaire_card .text_card{
+.text_card{
   margin-top: 5px;
 }
 
@@ -450,39 +450,13 @@ footer{
     text-align: center;
      }
 
-    nav ul li:hover{
+    .lien_nav:hover{
       color: #0065FC;
-      border-top:0;
+      border-top: 0px;
       border-bottom: solid 2px #0065FC ;
       padding-bottom: 20px;
-    }
+        }
 
-    .lien_nav:hover{
-      border-top: 0 ;
-    }
-
-
-/*
-   #nav_header{
-    display: flex;
-    gap:50px;
-    align-items: center;
-    margin-right: 50px;
-   }
-  
-   .lien_nav{
-    text-decoration: none;
-    color:black;
-    font-size: 16px;
-    font-weight: 500;
-   }
-
-   .lien_nav:hover{
-      color: #0065FC;
-      border-top: solid 2px #0065FC ;
-      padding-top: 20px;
-    }
-*/
 
     .bouton_recherche{
       display:none;
