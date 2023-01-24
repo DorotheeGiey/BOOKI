@@ -3,9 +3,9 @@
     background-color: white; 
     font-family: 'Raleway', sans-serif;
     max-width: 1400px;
-    margin:auto;
     margin-left:2%;
     margin-right:2%;
+
     }
 
     header {
@@ -218,8 +218,8 @@ h3{
 .hebergement_card{
  width: 30%;
  background-color: white;
- border-radius: 20px;
  border: solid 3px white;
+ border-radius: 20px;
  box-shadow: 2px 4px 4px 2px rgba(160, 160, 160, 0.1);
  margin-bottom: 30px;
 }
@@ -232,7 +232,7 @@ h3{
 }
 
 .text_card_heb{
-  padding : 10px 0 9px 16px;
+  padding : 10px 0 10px 10px;
 }
 
 .card p{
@@ -263,8 +263,8 @@ h3{
   width: 80%;
   height:145px;
   background-color: white;
-  border-radius: 20px;
   border: solid 3px white;
+  border-radius: 20px;
   box-shadow: 2px 4px 4px 2px rgba(160, 160, 160, 0.1);
   display: flex;
   margin: auto;
@@ -273,7 +273,6 @@ h3{
 }
 
 .populaire_card img{
-  height: auto;
   width: 40%;
   border-radius: 20px 0 0 20px ;
   object-fit: cover;
@@ -292,7 +291,7 @@ h3{
 
 .selection_activites{
   display: flex;
-  flex: row;
+  flex-direction: row;
   justify-content: space-between;
   margin-bottom: 50px;
 }
@@ -338,8 +337,6 @@ footer{
 
   body{
     max-width: 992px;
-    margin-left:2%;
-    margin-right:2%;
   }
 
   .liste_filtres{
@@ -353,38 +350,29 @@ footer{
 
   .selection_hebergement{
     width: 100%;
-    padding:0;
+    padding: 0;
     padding-bottom: 10px;
   }
-
-  .selection_hebergement h2{
-    padding-left: 25px
-  }
-
-  .selection_hebergement p{
-    padding-left: 25px;
-    }
-
-  .hebergement_card p{
-    padding: 0;
-    }
 
   .herbergement_cards{
     padding-left: 25px;
     padding-right: 25px;
   }
 
+  .selection_hebergement h2{
+    padding-left: 25px;
+  }
+
   .selection_populaire{
     width: 100%;
   }
-
   .selection_populaire_entete{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-left: 20px;
-    padding-right: 20px;
+    margin-left:25px;
+    margin-right: 25px;
   }
 
   .populaire_cards{
@@ -392,17 +380,13 @@ footer{
     flex-direction: row;
     gap: 15px;
     justify-content: space-between;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
   }
 
   .populaire_card{
-    width: 252px;
+    width: 30%;
     }
-
-  .img_pop_card img{
-    width: 100px;
-  }
 
   .activite_card{
     height: 320px;
@@ -422,6 +406,7 @@ footer{
     body{
       max-width: 768px;
       margin:0;
+      margin:auto;
     }
 
     header {
@@ -436,7 +421,7 @@ footer{
     .lien_nav{
     width: 50%;
     text-align: center;
-    padding-bottom: solid 2px #F2F2F2;
+    border-bottom: solid 2px #F2F2F2;
     padding-bottom: 18px;
     }
 
@@ -498,24 +483,28 @@ footer{
       display: flex;
       flex-direction: column-reverse;
     }
+
     .selection_hebergement{
       background-color: white;
+ 
         }
 
     .herbergement_cards{
       display: flex;
       flex-direction: column;
+
     }
 
     .hebergement_card{
       width: 100%;
       height: 199px;
-      margin-bottom: px;
+      margin-bottom: 20px;
+      padding-bottom: 5px;
     }
 
     .selection_populaire{
       border-radius: 0;
-      padding-bottom: 10px;
+      padding-bottom: 20px;
     }
 
     .populaire_cards{
@@ -527,7 +516,6 @@ footer{
       width: 100%;
       margin-bottom: 5px;
     }
-
 
     #activites{
       padding-left: 20px;
