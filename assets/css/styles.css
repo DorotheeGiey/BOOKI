@@ -112,8 +112,7 @@
 .zone_recherche{
   height: 50px;
   width: auto;
-  margin: 0px;
-  padding: 0px;
+  padding-left: 10px;
   font-weight: 700;
   font-size: 18px;
   border : solid 1px #F2F2F2;
