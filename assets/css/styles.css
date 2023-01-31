@@ -3,18 +3,24 @@
     background-color: white; 
     font-family: 'Raleway', sans-serif;
     max-width: 1400px;
-    margin-left:2%;
-    margin-right:2%;
-
+    margin:auto;
     }
 
     header {
       display:flex;
       justify-content: space-between;
       align-items: center;
-      margin-top: 20px;
       margin-bottom: 50px;
+      margin-left: 2%;
+      margin-right: 2%;
     }
+
+
+    .centre{
+      margin-left: 2%;
+      margin-right: 2%;
+    }
+
 
     h1, h2{
     font-size: 22px;
@@ -54,12 +60,11 @@
 
   #logo_accueil{
       height:20px;
+      margin-top: 36px;
     }
-
 
    #nav_header{
     display: flex;
-
     align-items: center;
    }
   
@@ -69,14 +74,14 @@
     font-size: 16px;
     font-weight: 400;
     border-top: solid 2px transparent;
-    padding-top: 40px;
+    padding-top: 38px;
     width: 162px;
     text-align: center;
    }
 
    .lien_nav:hover{
       border-top: solid 2px #0065FC ;
-      padding-top: 40px;
+      padding-top: 38px;
     }
 
     .lien_nav a:hover{
@@ -86,6 +91,8 @@
 
 
 /*début formulaire recherche */
+
+
 
 .form_recherche{
   margin-top: 20px;
@@ -111,7 +118,6 @@
 
 .zone_recherche{
   height: 50px;
-  width: auto;
   padding-left: 10px;
   font-weight: 700;
   font-size: 18px;
@@ -130,7 +136,6 @@
   color: white;
   border:none;
   height: 50px;
-  width: 130px;
   border-radius: 0 15px 15px 0;
   text-align: center;
   cursor: pointer;
@@ -320,14 +325,20 @@ footer{
   max-width: 1400px;
   display: flex;
   flex-direction: row;
-  gap: 250px;
   flex-wrap: wrap;
-  background-color:#F2F2F2 ;
-  padding: 50px;
+  justify-content: flex-start;
+  gap: 15%;
+  background-color: #F2F2F2;
+  padding-top: 50px;
+  padding-left:70px
+ }
+
+ .footer_ul{
+  width:200px;
  }
 
  .footer_ul li{
-  padding: 5px 0 5px 0; 
+  padding: 5px 0 5px 0;
  }
 
 /*mediaqueries*/
@@ -337,6 +348,7 @@ footer{
   body{
     max-width: 992px;
   }
+
 
   .liste_filtres{
     gap:10px;
@@ -396,7 +408,7 @@ footer{
   
   footer{
     max-width: 992px;
-    gap: 100px;
+    gap:10%;
    }
   }
 
@@ -413,6 +425,16 @@ footer{
       flex-direction: column;
       margin-bottom: 20px;
     }
+
+  .centre{
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+    #logo_accueil{
+      margin-top: 20px;
+    }
+
     nav{
       width: 100%;
     }
@@ -425,9 +447,8 @@ footer{
     }
 
     .lien_nav:hover{
-      border-top: 0px;
-      border-bottom: solid 2px #0065FC ;
-      padding-bottom: 18px;
+      border-top: none;
+      border-color: #0065FC ;
       }
 
     .bouton_recherche{
@@ -450,24 +471,25 @@ footer{
     }
 
     #section_choix_filtres{
-      margin-left : 10px;
-      margin-right: 10px;
+      margin-left : 20px;
+      margin-right: 20px;
     }
 
     #section_filtres{
       flex-direction: column;
       align-items: flex-start;
-       }
+      }
 
     .liste_filtres{
       margin:0;
       margin-top:10px;
       gap:14px;
+      align-items: center;
     }
 
     .bouton_filtres{
       font-size: 11px;
-      width: 120px;
+      width: 110px;
       height: 22px;
       line-height: 20px
     }
@@ -516,6 +538,11 @@ footer{
       margin-bottom: 5px;
     }
 
+    .bouton_afficherplus{
+      display: none;
+
+}
+
     #activites{
       padding-left: 20px;
       padding-right: 20px;
@@ -541,9 +568,8 @@ footer{
       display: flex;
       flex-direction: column;
       gap:30px;
-     }
-
-
+      padding:20px;
+    }
   }
 
 
